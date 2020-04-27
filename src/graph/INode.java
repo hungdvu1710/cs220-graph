@@ -2,7 +2,7 @@ package graph;
 
 import java.util.Collection;
 
-public interface INode
+public interface  INode
 {
     String getName();
     

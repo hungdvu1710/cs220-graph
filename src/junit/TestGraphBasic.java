@@ -149,7 +149,9 @@ public class TestGraphBasic
         assertEquals(5, n1.getWeight(n2));
         assertEquals(7, n2.getWeight(n1));
         n1.removeDirectedEdgeToNode(n2);
-        assertFalse(n1.hasEdge(n2));
         assertEquals(7, n2.getWeight(n1));
+        assertTrue(n2.hasEdge(n1));
+        assertFalse(n1.hasEdge(n2));
+
     }
 }
